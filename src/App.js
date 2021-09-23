@@ -74,7 +74,7 @@ const App = () => {
 					type="text"
 					name="startDate"
 					id="start_date"
-					label="Start Date"
+					label="Start Date (ISO Format)"
 					onChange={handleInputChange}
 					value={dates.useCurrentDate ? 'Current Date' : dates.startDate}
 					disabled={dates.useCurrentDate}
@@ -93,11 +93,10 @@ const App = () => {
 					type="text"
 					name="endDate"
 					id="end_date"
-					label="End Date"
+					label="End Date (ISO Format)"
 					onChange={handleInputChange}
 					value={dates.endDate}
 				/>
-
 				<Button type="submit">Start</Button>
 			</form>
 		</Container>
